@@ -11,5 +11,8 @@ dependencies:
 - name: apache
   repository: https://charts.bitnami.com/bitnami
   version: 9.6.3
-digest: sha256:bdc27f0ce09cae7d64c95d5211e05b858c20a51fa0e3cd6c70918f0ceae20bfc
-generated: "2023-06-13T20:49:14.981012448-07:00"
+- name: tomcat
+  repository: https://charts.bitnami.com/bitnami
+  version: 10.9.3
+digest: sha256:aaf544cbb9e3ab7432578cd101f20259a632ca24738c8f43ce44471cda804c62
+generated: "2023-06-14T01:03:24.274886308-07:00"

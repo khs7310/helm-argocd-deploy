@@ -24,16 +24,16 @@ nginx:
       cpu: *cpus
       memory: *mems
 
-nginx2:
-  enabled: true    
-  namespaceOverride: "test2"
-  fullnameOverride: "two"
-  containerPorts:
-    http: 8081
-  resources:  
-    requests:
-      cpu: 100m
-      memory: 128Mi
+# nginx2:
+#   enabled: true    
+#   namespaceOverride: "test2"
+#   fullnameOverride: "two"
+#   containerPorts:
+#     http: 8081
+#   resources:  
+#     requests:
+#       cpu: 100m
+#       memory: 128Mi
 
 
 apache:
