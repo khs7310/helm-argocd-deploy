@@ -39,3 +39,7 @@ nginx2:
 apache:
   enabled: true    
 
+tomcat:
+  enabled: true    
+
+
