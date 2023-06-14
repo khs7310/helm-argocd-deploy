@@ -1,0 +1,22 @@
+dependencies:
+
+- name: filebeat
+  version: ^8.5.1
+  repository: https://helm.elastic.co/
+  condition: filebeat.enabled
+- name: logstash
+  version: ^8.5.1
+  repository: https://helm.elastic.co/
+  condition: logstash.enabled
+- name: nginx
+  version: ^14.2.2
+  repository: https://charts.bitnami.com/bitnami
+  condition: nginx.enabled
+#! - name: nginx
+#!   version: ^14.2.2
+#!   repository: https://charts.bitnami.com/bitnami
+#!   condition: nginx2.enabled  
+- name: apache
+  version: ^9.6.2
+  repository: https://charts.bitnami.com/bitnami
+  condition: apache.enabled

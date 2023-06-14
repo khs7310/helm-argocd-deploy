@@ -1,0 +1,41 @@
+
+
+
+rsc:
+  cpu: &cpus 300m
+  memory: &mems 300Mi
+
+logstash:
+  enabled: false
+  # elasticsearch:
+  #   host: elastic-stack-elasticsearch-client
+
+filebeat:
+  enabled: false
+
+nginx:
+  enabled: true    
+  namespaceOverride: "test3"
+  fullnameOverride: "three"
+  containerPorts:
+    http: 8081
+  resources:  
+    requests:
+      cpu: *cpus
+      memory: *mems
+
+nginx2:
+  enabled: true    
+  namespaceOverride: "test2"
+  fullnameOverride: "two"
+  containerPorts:
+    http: 8081
+  resources:  
+    requests:
+      cpu: 100m
+      memory: 128Mi
+
+
+apache:
+  enabled: true    
+

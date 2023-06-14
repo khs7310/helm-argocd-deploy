@@ -1,0 +1,15 @@
+dependencies:
+- name: filebeat
+  repository: https://helm.elastic.co/
+  version: 8.5.1
+- name: logstash
+  repository: https://helm.elastic.co/
+  version: 8.5.1
+- name: nginx
+  repository: https://charts.bitnami.com/bitnami
+  version: 14.2.2
+- name: apache
+  repository: https://charts.bitnami.com/bitnami
+  version: 9.6.3
+digest: sha256:bdc27f0ce09cae7d64c95d5211e05b858c20a51fa0e3cd6c70918f0ceae20bfc
+generated: "2023-06-13T20:49:14.981012448-07:00"
